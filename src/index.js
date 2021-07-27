@@ -10,6 +10,12 @@ const functions = {
     divide: (num1, num2) => num1 / num2,
     multiply: (num1, num2) => num1 * num2,
   },
+  capitalize: (string) => {
+    if (string.constructor !== String) return 'Nota a string!';
+
+    const str = string.charAt(0).toUpperCase() + string.slice(1);
+    return str;
+  },
 };
 
 module.exports = functions;
