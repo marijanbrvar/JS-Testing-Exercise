@@ -31,3 +31,12 @@ describe('My calculator can', () => {
     expect(functions.calculator.multiply(10, 2)).toBe(20);
   });
 });
+
+describe('You should create function which will capitalize string', () => {
+  test('String is capitalized', () => {
+    expect(functions.capitalize('marijan')).toBe('Marijan');
+  });
+  test('Argumnet is not string', () => {
+    expect(functions.capitalize(12)).toBe('Nota a string!');
+  });
+});
