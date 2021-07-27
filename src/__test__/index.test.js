@@ -16,3 +16,18 @@ test('Check if string is to short or too long then return error', () => {
 test('Reverse string provided as argument', () => {
   expect(functions.reverseString('1234567890')).toBe('0987654321');
 });
+
+describe('My calculator can', () => {
+  test('Add', () => {
+    expect(functions.calculator.add(2, 2)).toBe(4);
+  });
+  test('Substract', () => {
+    expect(functions.calculator.subtract(10, 2)).toBe(8);
+  });
+  test('Divide', () => {
+    expect(functions.calculator.divide(10, 2)).toBe(5);
+  });
+  test('Multiply', () => {
+    expect(functions.calculator.multiply(10, 2)).toBe(20);
+  });
+});
